@@ -6,7 +6,65 @@
     <title>Dunmin's Little Den</title>
 </head>
 <body>
-    Hi 👋,<br>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe1f0 0%, #ffb6e6 100%);
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+            color: #d72660;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 60px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 24px;
+            display: inline-block;
+            padding: 40px 50px 30px 50px;
+            box-shadow: 0 8px 32px rgba(255, 182, 230, 0.3);
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #d72660;
+            text-shadow: 0 2px 8px #fff0fa;
+        }
+        .pusheen {
+            width: 180px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 4px 16px #ffb6e6);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0);}
+            50% { transform: translateY(-24px);}
+        }
+        .sparkle {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            pointer-events: none;
+            animation: sparkle 2s infinite;
+        }
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0.8);}
+            50% { opacity: 1; transform: scale(1.2);}
+        }
+    </style>
+    <div class="container">
+        <img class="pusheen" src="https://pusheen.com/wp-content/themes/pusheen/img/surprised@2x.png" alt="Pusheen waving">
+        <h1>Hi 👋,</h1>
+        <p style="font-size:1.3em; margin-bottom: 0.8em;">
+            Welcome to Dunmin's Little Den! 😺<br>
+            <span style="color:#ff69b4;">Stay pawsitive and enjoy the cuteness!</span>
+        </p>
+        <img class="pusheen" src="https://pusheen.com/wp-content/themes/pusheen/img/ice-cream@2x.png" alt="Pusheen with ice cream" style="width:120px; animation-delay: 1s;">
+    </div>
+    <!-- Sparkles for extra cuteness -->
+    <img class="sparkle" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png" style="top: 30px; left: 60px;">
+    <img class="sparkle" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png" style="top: 120px; right: 80px; animation-delay: 1s;">
+    <img class="sparkle" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png" style="bottom: 60px; left: 120px; animation-delay: 0.5s;">
 
     Welcome to Dunmin's Little Den! 😺
 </body>
